@@ -64,14 +64,6 @@ public class DetailActivity extends AppCompatActivity {
         originTextView.setText(sandwich.getPlaceOfOrigin());
         descriptionTextView.setText(sandwich.getDescription());
 
-//        for (String ingredient : sandwich.getIngredients()) {
-//            allIngrdients += ingredient;
-//        }
-//
-//        for (String altName : sandwich.getAlsoKnownAs()) {
-//            allAltNames += altName;
-//        }
-
         List<String> ingredientsList = sandwich.getIngredients();
         String allIngrdients = String.join(", ", ingredientsList);
 
